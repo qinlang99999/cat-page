@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>今日值班猫</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-label="猫咪主页">
+        <div class="photo-panel">
+          <img src="cat-portrait.jpg" alt="一只被抱着的金色猫咪看向镜头" />
+          <div class="photo-badge">
+            <span class="status-dot"></span>
+            在线撒娇中
+          </div>
+        </div>
+
+        <div class="content-panel">
+          <p class="eyebrow">Today Cat Profile</p>
+          <h1>一只正在认真营业的金色小猫</h1>
+          <p class="lead">
+            圆眼睛、软爪爪、被抱住还要探头看镜头。这个页面把照片里的可爱瞬间做成一张温柔的个人主页。
+          </p>
+
+          <div class="actions" aria-label="页面操作">
+            <button class="primary-action" type="button" id="boopButton">
+              摸摸脑袋
+            </button>
+            <a class="secondary-action" href="cat-portrait.jpg" download>
+              下载照片
+            </a>
+          </div>
+
+          <div class="stats" aria-label="猫咪数据">
+            <article>
+              <strong>99%</strong>
+              <span>蓬松指数</span>
+            </article>
+            <article>
+              <strong>5 星</strong>
+              <span>镜头感</span>
+            </article>
+            <article>
+              <strong>+1</strong>
+              <span>今日心动</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="details" aria-label="猫咪详细介绍">
+        <article class="detail-card">
+          <span>01</span>
+          <h2>照片气质</h2>
+          <p>画面很近，猫咪的眼神直接、表情乖巧，适合做成偏生活感的温暖页面。</p>
+        </article>
+        <article class="detail-card">
+          <span>02</span>
+          <h2>主视觉</h2>
+          <p>使用原图大幅展示，把猫咪的脸和爪子作为第一眼焦点，背景只做轻量衬托。</p>
+        </article>
+        <article class="detail-card">
+          <span>03</span>
+          <h2>小互动</h2>
+          <p>点击“摸摸脑袋”会出现一句随机夸夸，让页面不只是展示，也有一点陪伴感。</p>
+        </article>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
